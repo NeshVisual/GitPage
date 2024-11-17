@@ -54,16 +54,17 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/TourVirtualDemoHTML.loader.js";
       var config = {
-        arguments: [],
-        dataUrl: buildUrl + "/TourVirtualDemoHTML.data",
-        frameworkUrl: buildUrl + "/TourVirtualDemoHTML.framework.js",
-        codeUrl: buildUrl + "/TourVirtualDemoHTML.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "Thinkerbox",
-        productName: "360TourDemo",
-        productVersion: "0.1.0",
-        showBanner: unityShowBanner,
-      };
+  arguments: [],
+  dataUrl: "Build/TourVirtualDemoHTML.data",  // Ruta local a tu archivo
+  frameworkUrl: "Build/TourVirtualDemoHTML.framework.js",  // Ruta local a tu archivo
+  codeUrl: "Build/TourVirtualDemoHTML.wasm",  // Ruta local a tu archivo
+  streamingAssetsUrl: "StreamingAssets",
+  companyName: "Thinkerbox",
+  productName: "360TourDemo",
+  productVersion: "0.1.0",
+  showBanner: unityShowBanner,
+};
+
 
       // By default, Unity keeps WebGL canvas render target size matched with
       // the DOM size of the canvas element (scaled by window.devicePixelRatio)
